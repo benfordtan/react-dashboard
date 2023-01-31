@@ -49,18 +49,7 @@ export const mockDataContacts = [
     city: "New York",
     zipCode: "13151",
     registrarId: 123512,
-  },
-  {
-    id: 3,
-    name: "Jaime Lannister",
-    email: "jaimelannister@gmail.com",
-    age: 45,
-    phone: "(422)982-6739",
-    address: "3333 Want Blvd, Estanza, NAY 42125",
-    city: "New York",
-    zipCode: "87281",
-    registrarId: 4132513,
-  },
+  }
 ];
 
 export const mockDataInvoices = [
