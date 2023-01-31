@@ -128,7 +128,7 @@ const Form = () => {
   );
 };
 
-const phoneRegExp =
+const mobileRegExp =
   /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/;
 
 const checkoutSchema = yup.object().shape({
@@ -137,7 +137,7 @@ const checkoutSchema = yup.object().shape({
   email: yup.string().email("invalid email").required("required"),
   contact: yup
     .string()
-    .matches(phoneRegExp, "Phone number is not valid")
+    .matches(mobileRegExp, "Mobile number is not valid")
     .required("required"),
   address1: yup.string().required("required"),
   address2: yup.string().required("required"),
